@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블</title>
+    <style>
+        /* css */
+    table > caption {
+        width:100%; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color: #171717 
+    }
+    caption {
+        font-size: 30px;
+    }
+    table {
+        width: 100%; height: auto;
+    }
+    tr,
+    th {
+        border:1px;
+        border-collapse:collapse;
+        text-align: center;
+    }
+    .hd { 
+        border-bottom-width:2px; border-bottom-style:solid; border-bottom-color:#F11;
+    }
+    .make_telecom{
+        width:90%; height:auto; min-height:100px;
+        margin:auto;
+        background-color:#ccf;
+    }
+    </style>
+</head>
+<body>
+    <!-- layout -->
+    <h1><a href="../index.html">웹 기초</a></h1>
+    <div class="table_ex">
+      <div class="make_telecom">
+        <table summary="테이블 만들기">
+            <caption>통신사별 휴대폰 생산 현황</caption>
+            <thead>
+                <tr class="hd"><th>업체명</th><th>모델명</th><th>수량</th><th>생산지</th></tr>
+            </thead>
+            <tbody>
+                <tr><th rowspan="12">SK</th><td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr><th rowspan="3">KT</th> <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr><th rowspan="3">LG</th> <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+                <tr>                        <td>갤</td><td>3</td><td>한국</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><th colspan="2">합계</th>   <td>54</td><td>--</td></tr>
+            </tfoot>
+        </table>
+    </div>
+    <!-- //table_ex -->
+</div>
+<!-- //make_telecom -->
+    <script>
+        //script
+    </script>
+ 
+</body>
+</html>
