@@ -15,10 +15,29 @@
 }
 /* #header ----------------------- */
 #header {
-  width:100%; height:100px;
-  background-color: #f06;
+  width:100%; height:auto;
+  background-color:#d3d;
 }
-
+#header:after,
+#header::after {
+  content:" ";
+  display:block;
+  width:100%; height:0;
+  clear:both;
+}
+  h1 {
+    float:left;
+    width:120px; height:100px;
+    margin:3px;
+    background-color: #ddd;
+    text-align: center;
+  }
+  .navigation {
+    float:right;
+    width:400px; height:100px;
+    margin:3px;
+    background-color: #ff1;
+  }
 /* #section ----------------------- */
 #section {
   width:100%; height:auto;
