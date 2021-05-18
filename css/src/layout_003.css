@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* layout_003.css */
+
+#wrap {
+  width:1600px; height:100%;
+  margin:auto;
+}
+
+#wrap>div {
+  width:100%
+}
+#wrap>div>h1,
+#wrap>div>div {
+  background-color: #0bb;
+}
+
+/* #headBox */
+#headBox {
+  height:150px;
+  padding:34px 50px 28px;
+  box-sizing: border-box;
+  background-color: #ddd;
+}
+#headBox>h1,
+#headBox>div {
+  float:left;
+  margin-right: 75px;
+  height: 80px;
+}
+#headBox>div:last-child {
+  margin-right: 0px;
+}
+  .logo {
+    width:250px;
+    text-align: center;
+  }
+  .menu {
+    width:850px;
+  }
+  .user {
+    width:250px;
+  }
+
+/* #adViewBox */
+#adViewBox {
+  height:750px;
+  background-color: #aaa;
+}
+
+/* #localNavBox */
+#localNavBox {
+  height:250px;
+  margin-bottom:50px;
+  background-color: #777;
+}
+
+/* #popularContentBox */
+#popularContentBox {
+  height:600px;
+  background-color: #aaa;
+}
+
+/* #newContentBox */
+#newContentBox {
+  height:900px;
+  margin-bottom: 80px;
+  background-color: #ddd;
+}
+
+/* #recommendedConttentBox */
+#recommendedConttentBox {
+  height:600px;
+  margin-bottom: 80px;
+  background-color: #777;
+}
+
+/* #communityBox */
+#communityBox {
+  height:800px;
+  margin-bottom: 80px;
+  background-color: #ddd;
+}
+
+/* #miniAdBox */
+#miniAdBox {
+  height:400px;
+  margin-bottom: 80px;
+  background-color: #aaa;
+}
+
+/* #footBox */
+#footBox {
+  height:200px;
+  background-color: #777;
+}
