@@ -1,0 +1,200 @@
+/* basic_code_13_image.css */
+
+#wrap {
+    width:960px; height: auto;
+    margin:auto;
+}
+
+.part {
+    width: 100%; height: auto;
+    margin-bottom:16px;
+    padding:20px; box-sizing: border-box;
+    border:1px solid #777;
+}
+
+h2 {
+    width:90%; height:auto;
+    margin:auto;
+    border-bottom: 1px solid #333;
+    margin-bottom: 5px;
+}
+	.img_cover {
+		width:100px; height:200px;
+		background-color: #ffa;
+		overflow: hidden;
+	}
+	.img_cover > img {
+		width:100%; height:auto;
+	}
+	abbr {
+		text-transform:uppercase;
+		text-decoration:none;
+	}
+	.sample {
+		float:left;
+		width:500px; height:300px;
+		padding:5px;
+		background-color: #f77; border:1px solid #77f;
+	}
+	.bgi {
+		float:left;
+		width:150px; height:300px;
+		margin:10px;
+		border:1px solid #999;
+		background-color:#ddd;
+		background-image: url("../../img/icon/circled_down.png");
+		background-size: 10% auto;
+	}
+
+	/* background-image는
+	- 기본형이 패턴처리가 된다. 
+	 */
+
+	 .bg_01 {
+		 background-repeat: no-repeat;
+	 }
+
+	 .bg_02 {
+		 background-repeat: repeat-x;
+	 }
+	 .bg_03 {
+		 background-repeat: repeat-y;
+	 }
+	 .bg_04 {
+		 /* background-size: auto 50%; */
+		 background-size: 50% auto;
+		 background-repeat: no-repeat;
+	 }
+	 .bg_05 {
+		 background-image: url("../../img/bg/background_001.jpg");
+		 /* background-size: contain; */
+		 background-size: cover;
+		 background-repeat: no-repeat;
+	 }
+
+	 /* background-size: 
+	 contain; -> 이미지를 모두 보이게
+	 cover;   -> 이미지를 완전히 감싸게
+	 x수치 auto; -> 가로(x수치)의 크기기준으로 세로크기는 자동설정
+	 auto y수치; -> 세로(y수치)의 크기기준으로 가로크기는 자동설정 
+	 
+	 */
+	 /* background-size는 구형브라우저에서는 동작 x */
+	 .bg_06 {
+		 background-size: 20%;
+		 background-repeat: no-repeat;
+
+		 /* background-position: right center; */
+		 background-position: 1vw 2vh;
+	}
+	
+	/* * background-position: x좌표 y좌표;
+	      x좌표(권장x) : left || center || right
+				y좌표(권장x) : top || center || bottom
+
+				x좌표 : %, px, em, rem, vw, vh등 단위를 사용하자! 
+				y좌표 : %, px, em, rem, vw, vh등 단위를 사용하자! 
+
+	 */
+
+	/*
+	   float을 사용하면 해당요소는 강제로 display:block;으로 변환 
+	 */
+
+	 .test_place {
+		 width: 100%; height:auto;
+	 }
+
+	 .test_place li {
+		 float:left;
+		 width: 46px; height: 45px;
+		 margin:3px; padding: 1px;
+		 border:1px solid #57f;
+		 box-sizing: border-box;
+		 border-radius:3px;
+		 background-color:#7af;
+	 }
+	 .test_place li > a {
+		 display:block;
+		 width:100%; height:100%;
+		 border:1px solid #57f;
+		 border-radius:5px;
+		 background-image: url("../../img/icon/icon_m.png");
+		 background-repeat: no-repeat;
+		 background-size: auto auto;
+	 }
+	 .test_place li:nth-child(1) > a{
+		 /* x:58,y:62 */
+		 background-position: -58px -62px;
+		 /* 반드시 해당하는 이미지가 움직인다 */
+	 }
+
+	 .test_place li:nth-child(2) > a{
+		 background-position: -207px -272px;
+	 }
+	 .test_place li:nth-child(3) > a{
+		 background-position: -508px -202px;
+	 }
+	 .test_con {
+		 width:100%; height:auto;
+	 }
+	 .test_con li {
+		 float:left;
+		 width: 60px; height: 60px;
+		 margin:2px; padding:2px;
+		 border:1px solid #57f;
+		 box-sizing: border-box;
+		 border-radius:3px;
+		 background-color:#f77;
+	 }
+	 .test_con li > a {
+		 display:block;
+		 width:100%; height:100%;
+		 border:1px solid #57f;
+		 border-radius:5px;
+		 background-image: url("../../img/icon/icon_multi.jpg");
+		 background-repeat: no-repeat;
+		 background-size: auto auto;
+	 }
+	 .test_con li:nth-child(1) > a{
+		 background-position: -34px -46px;
+	 }
+	 .test_con li:nth-child(2) > a{
+		background-position: -172px -186px;
+	 }
+	 .test_con li:nth-child(3) > a{
+		background-position: -97px -718px;
+	 }
+	 .test_con li:nth-child(4) > a{
+		background-position: -171px -1264px;
+	 }
+	 .test_con li:nth-child(5) > a{
+		background-position: -512px -722px;
+	 }
+	 .test_con2 {
+		display:block;
+		width:100%; height:100%;
+		border:1px solid #57f;
+		border-radius:5px;
+		background-image: url("../../img/icon/icon_multi.jpg");
+		background-repeat: no-repeat;
+		background-size: auto auto;
+	 }
+	 .test_con2:hover {
+		width:100px; height:100px;
+	}
+	 .test_con li:nth-child(6) {
+		 background-position: -584px -46px;
+	 }
+	 .test_con li:nth-child(7) {
+		background-position: -723px -187px;
+	 }
+	 .test_con li:nth-child(8) {
+		background-position: -650px -722px;
+	 }
+	 .test_con li:nth-child(9) {
+		background-position: -1062px -724px;
+	 }
+	 .test_con li:nth-child(10) {
+		background-position: -726px -1263px;
+	 }

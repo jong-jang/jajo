@@ -1,27 +1,10 @@
 @charset "UTF-8";
 /* layout_003-2.css */
 
-/* common.css */
-.blind {
-  display: block;
-  width:0; height:0;
-  position: absolute; z-index: -1;
-  overflow:hidden;
-}
-
-.first_float > li{
-  float:left;
-
-}
-.first_float li:first-child{
-  margin-left:0;
-}
-
 /* I.R 기법: 
    - image replace기법 해당하는 요소에 이미지로 글자를 대체하여 사용하는 기법
    - 필요한 내용이지만 눈에 보이지 않게 처리하는 방법
  */
-
 
 /* --------------------------------- */
 #wrap {
@@ -211,7 +194,7 @@
   padding-top: 22px 0; box-sizing: border-box;
   background-color: #777;
 }
-  .foot_con-area{
+  .foot_con_area{
     width:1300px; height:140px;
     margin: auto;
     background-color: #0bb;
