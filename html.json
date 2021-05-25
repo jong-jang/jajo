@@ -29,7 +29,7 @@
 			"  ",
 			"  <link rel=\"stylesheet\" href=\"../css/base/reset.css\">",
 			"  <link rel=\"stylesheet\" href=\"../css/base/common.css\">",
-			"  <link rel=\"stylesheet\" href=\"../css/src/${1:filename}.css\"",
+			"  <link rel=\"stylesheet\" href=\"../css/src/${1:filename}.css\">",
 			"",
 			"  <title>웹 기초</title>",
 			"",
