@@ -1,0 +1,19 @@
+/* layout_004-2_viewBox.css */
+
+#viewBox {
+  float:left;
+  width: 730px; height: 710px;
+  padding:152px 42px 0 78px; box-sizing: border-box;
+}
+  #viewObject {
+    position:relative;
+    width: 610px; height: 588px;
+  }  
+    .view_object_02 {
+      position:absolute;
+      right:22px;
+    }
+    .view_object_01 {
+      position:absolute;
+      bottom:90px;
+    }

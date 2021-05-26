@@ -1,0 +1,6 @@
+/* layout_004-2_mainBox.css */
+
+#mainBox {
+  width: 980px; height: auto; min-height: 710px;
+  background-image:url("../../img/bg/mainBox.png");
+}

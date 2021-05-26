@@ -1,0 +1,8 @@
+/* layout_004-2_wrap.css */
+
+#wrap {
+  position:relative;
+  width:980px; height:auto;
+  margin:auto;
+  background-color: #dfd;
+}
