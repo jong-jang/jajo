@@ -38,7 +38,7 @@
 			"  <!-- layout -->",
 			"${2}",
 			"  <!-- script -->",
-			"<!--   <script src=\"../js/src/${1:filename}.js\"></script>-->",
+			"<!--   <script src=\"../js/src/${1:filename}.js\"></script> -->",
 			"  ",
 			"</body>",
 			"</html>",
