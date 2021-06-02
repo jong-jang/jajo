@@ -1,0 +1,88 @@
+/* layout_007-2 */
+
+/* guide */
+:root{
+/* color */
+--color-color1 :#2173ba;
+--color-color2 :#8c807d;
+}
+
+/* wrap */
+#wrap {
+  width: 750px; height: auto; min-height: 798px;
+  padding:12px 34px 16px 30px; box-sizing: border-box;
+  margin:auto;
+  border:1px solid #171717;
+}
+/* topBox */
+#topBox {
+  width: 100%; height: auto; min-height: 436px;
+  border-bottom:1px solid #bbb;
+  padding-bottom: 26px; box-sizing: border-box;
+}
+h1 {
+  width:100%; height:auto; min-height:72px;
+  margin-bottom: 10px;
+  /* background-image: url(../../img/icon/eformsign_logo.png); */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+form,
+.insert_box, 
+.insert_box2 {
+  border:0; margin:0; padding:0;
+}
+.insert_box > legend {
+  width: 100%; height:auto; min-height: 24px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom:22px;
+}
+.insert_box li,
+.insert_box2 li {
+  position: relative;
+  width: 100%; height:auto; min-height: 58px;
+  margin-bottom:12px;
+}
+.insert_box li > input,
+.insert_box2 li > input {
+  width: 100%; height:auto; min-height: 58px;
+  padding-left:58px; box-sizing: border-box;
+}
+.insert_box li > label,
+.insert_box2 li > label {
+  position: absolute; top: 0; left:0;
+  width: 56px; height: auto; min-height: 58px;
+  border-right:1px solid var(--color-color2);
+}
+.insert_box2 li:nth-child(4) > input {
+  background-color: var(--color-color1);
+}
+/* botBox */
+#botBox {
+  width:100%; height: auto; min-height :308px;
+  padding-top: 24px; box-sizing: border-box;
+}
+p {
+  width: 100%; height: auto; min-height: 48px;
+  margin-bottom: 34px;
+  padding-right: 54px; box-sizing: border-box;
+  font-size: 1.075rem;
+}
+p > a {
+  text-decoration: underline;
+  color: #2173ba;
+}
+.insert_box2 li:nth-child(2) > label {
+  border:1px solid var(--color-color2); box-sizing: border-box;
+}
+.insert_box2 li:nth-child(4) > input,
+.insert_box2 li:nth-child(4) > label {
+  border:0; padding:0; margin:0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.insert_box2 li > select {
+  width:629px; height:auto; min-height:58px;
+  position: absolute; top:0; right:0;
+}

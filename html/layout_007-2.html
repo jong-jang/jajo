@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- html/layout_007-2.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="description" content="웹표준, 웹기초 공부, html을 익혀보자">
+  <meta name="keyword" content="웹표준, web, html, css , js, basic">
+  <meta name="author" content="jajo"> -->
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/layout_007-2.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="topBox">
+      <h1><a href="./all_contents.html"><span class="blind">로고</span></a></h1>
+      <hr />
+      <h2><span class="blind">회원 가입 상단</span></h2>
+      <form action="#" method="POST">
+        <fieldset class="insert_box">
+          <legend>회원 가입</legend>
+          <ul>
+            <li>
+              <input type="email" name="userEmail" id="userEmail" value="" required placeholder="이메일"/>
+              <label for="userEmail">
+                <span class="blind">이메일을 입력하세요.</span>
+              </label>
+            </li>
+            <li>
+              <input type="text" name="userName" id="userName" value="" required placeholder="이름"/>
+              <label for="userName">
+                <span class="blind">이름을 입력하세요.</span>
+              </label>
+            </li>
+            <li>
+              <input type="password" name="userPw" id="userPw" value="" required placeholder="비밀번호"/>
+              <label for="userPw">
+                <span class="blind">비밀번호을 입력하세요.</span>
+              </label>
+            </li>
+            <li>
+              <input type="password" name="userPw" id="userPw" value="" required placeholder="비밀번호 확인"/>
+              <label for="userPw">
+                <span class="blind">비밀번호 확인을 입력하세요.</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+    </header>
+<!-- // #topBox -->
+    <section id="botBox">
+      <h2><span class="blind">회원 가입 하단</span></h2>
+      <fieldset class="insert_box2">
+        <legend ><span class="blind">회원 가입2</span></legend>
+        <ul>
+          <li>
+            <input type="text" name="usercomName" id="usercomName" value="" required placeholder="회사 이름"/>
+            <label for="usercomName">
+              <span class="blind">회사 이름을 입력하세요.</span>
+            </label>
+          </li>
+          <li>
+            <select name="country" id="country">
+              <option>국가를 선택하세요</option>
+              <option value="한국">한국</option>
+              <option value="미국">미국</option>
+              <option value="중국">중국</option>
+              <option value="일본">일본</option>
+              <option value="러시아">러시아</option>
+              <option value="영국">영국</option>
+            </select>
+            <label for="contry"><span class="blind">국가를 선택하세요</span></label>
+          </li>
+          <li>
+            <p>아래 [동의하고 가입하기]버튼을 클릭하면,<a href="#">이용 약관</a> 및 <a href="#">개인 정보 취급 방침</a>에 
+              동의하게 됩니다.</p>
+          </li>
+          <li>
+            <input type="submit" name="pressBtn" id="pressBtn" value="동의하고 제출하기" />
+            <label for="pressBtn" class="blind">
+              <span class="blind">국가를 선택하세요.</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    </section>
+<!-- // #botBox -->
+  </div>
+  <!-- script -->
+  <!-- <script src="../js/src/layout_007-2.js"></script> -->
+  
+</body>
+</html>
