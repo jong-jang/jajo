@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- layout_007-3.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="description" content="웹표준, 웹기초 공부, html을 익혀보자">
+  <meta name="keyword" content="웹표준, web, html, css , js, basic">
+  <meta name="author" content="jajo"> -->
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/layout_007-3.css">
+
+  <title>웹 기초</title>
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./all_contents.html">logo</a></h1>
+    <section id="joinContent">
+      <form action="#" method="POST">
+        <fieldset class="join_box top">
+          <legend>idpw</legend>
+          <ul>
+            <li>
+              <h3>아이디</h3>
+              <input type="text" name="Id" id="Id" value="" required />
+              <label for="Id"></label>
+            </li>
+            <li>
+              <h3>비밀번호</h3>
+              <input type="password" name="Pw" id="Pw" value="" required />
+              <label for="Pw"></label>
+            </li>
+            <li>
+              <h3>비밀번호 재확인</h3>
+              <input type="password" name="PwR" id="PwR" value="" required />
+              <label for="PwR"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="join_box mid">
+          <legend>info</legend>
+          <ul>
+            <li>
+              <h3>이름</h3>
+              <input type="text" name="userN" id="userN" value="" required placeholder=""/>
+              <label for="userN"></label>
+            </li>
+            <li>
+              <h3>성별</h3>
+              <select name="genderC" id="genderC">
+                <option value="">성별</option>
+                <option value="men">남자</option>
+                <option value="women">여자</option>
+              </select>
+            </li>
+            <li>
+              <h3>생년월일</h3>
+              <input type="text" name="yearC" id="yearC" value="" required placeholder="년(4자)"/>
+              <label for="yearC"></label>
+              <select name="monthC" id="monthC">
+                <option value="">월</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <input type="text" name="dataC" id="dataC" value="" required placeholder="일"/>
+              <label for="dataC"></label>
+            </li>
+            <li>
+              <h3>본인 확인 이메일(선택)</h3>
+              <input type="text" name="userE" id="userE" value="" placeholder="선택입력"/>
+              <label for="userE"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="join_box bot">
+          <legend>tel</legend>
+          <ul>
+            <li>
+              <h3>휴대전화</h3>
+              <select name="userP" id="userP">
+                <option value="KR">대한민국 +82</option>
+                <option value="KR">대한민국 +82</option>
+                <option value="KR">대한민국 +82</option>
+              </select>
+            </li>
+            <li>
+              <input type="text" name="usP" id="usP" value="" required placeholder="전화번호 입력"/>
+              <label for="usP"></label>
+              <button type="button">인증번호 받기</button>
+            </li>
+            <li>
+              <input type="text" name="isN" id="isN" value="" required placeholder="인증번호를 입력하세요"/>
+              <label for="isN"></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="submit_btn">
+          <legend>btn</legend>
+          <button type="submit">가입 하기</button>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+  <!-- script -->
+  <!--<script src="../js/src/layout_007-3.js"></script>-->
+  
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* layout_007-3.css */
+
+#wrap {
+  width: 100%; height:auto;
+  padding-top: 100px; padding-bottom:100px; box-sizing: border-box;
+  background-color: #eee;
+}
+/* joinContent */
+#joinContent {
+  width: 460px; height: auto; min-height: 976px;
+  margin:auto;
+}
+h1 {
+  width: 460px; height: auto; min-height: 46px;
+  margin: auto;
+  text-align: center;
+}
+.join_box li {
+  margin-bottom: 16px;
+}
+.join_box li:nth-last-child(1){
+  margin-bottom: 45px;
+}
+.join_box li>h3 {
+  margin-bottom: 8px;
+}
+.join_box li>input,
+.join_box li>select {
+  width: 100%; height: auto; min-height: 50px;
+  background-color: #fff;
+}
+.mid li:nth-child(3)>input,
+.mid li:nth-child(3)>select {
+  width: 32%; 
+  margin-right: 4px;
+} 
+.mid li:nth-child(3)>input:nth-last-of-type(1) {
+  margin-right: 0;
+}
+.bot li:nth-child(2)>input {
+  width: 68%;
+  margin-right: 4px;
+}
+li > button {
+  width: 30%; height: auto; min-height: 50px;
+}
+button {
+  color: #fff;
+  background-color: #3cb15a;
+}
+.submit_btn > button{
+  width: 100%; height: auto; min-height: 50px;
+  font-size: 1.5rem;
+}
