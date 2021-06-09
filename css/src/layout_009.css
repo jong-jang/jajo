@@ -1,7 +1,7 @@
 /* layout_009.css */
 
-@import url("../pr/layout_009_base.css");
-@import url("../pr/layout_009_v_phone.css");
-@import url("../pr/layout_009_h_phone.css");
-@import url("../pr/layout_009_tablet.css");
-@import url("../pr/layout_009_pc.css");
+@import url("../pr/layout_009_a_base.css");
+@import url("../pr/layout_009_b_v_phone.css");
+@import url("../pr/layout_009_c_h_phone.css");
+@import url("../pr/layout_009_d_tablet.css");
+@import url("../pr/layout_009_e_pc.css");

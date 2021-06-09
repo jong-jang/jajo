@@ -54,7 +54,15 @@
     padding:8.625rem 2.5rem 4.0625rem;
     padding:28.75vw 8.333333vw 12.5vw;
     box-sizing: border-box;
+    overflow:scroll;
   }
+  .view_guide {
+    width: 100%; height: 100%;
+    border:1px solid #333;
+    box-sizing: border-box;
+    /* overflow-x:hidden; */
+    overflow-y: auto;
+}
     .view_inner > li {
         width:100%; height:90px; height:5.625rem; height:18.75vw;
         margin-bottom:30px; margin-bottom:1.875rem; margin-bottom:6.25vw;
@@ -65,16 +73,12 @@
     }
   /* #contentBox */
   #contentBox{
-      width:100%; height:720px; height:45rem;
-      height:150vw;
-      padding:24px 16px; box-sizing: border-box;
-      background-color:#547d77;
+  height:auto;
+      /* height:150vw; */
   }
-  .title_shape {
-    width:192px; height:156px;
-    width:12rem; height:9.75rem;
-    background-color: #33b88f;
-}
+  .content_area {
+      height:auto; min-height:50rem;
+  }
   /* #infoBox */
   #infoBox{
       width:100%; height:auto;

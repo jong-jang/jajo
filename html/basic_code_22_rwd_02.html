@@ -15,6 +15,8 @@
     <script src="../ie/csspie/PIE.js"></script>
     <script src="../ie/responsive.min.js"></script>
   <![endif]-->
+    <!-- fontawesome5 -->
+    <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../favicon.png">
   
@@ -33,15 +35,58 @@
         <h1><a href="./all_contents.html">site name</a></h1>
         <nav id="navBox">
           <h2 class="blind">navigation</h2>
-          <div class="search_area"></div>
-          <div class="gnb_area"></div>
+          <div class="search_area">
+            <div class="search_open_btn">
+              <i class="fas fa-search"></i>
+              <button type="button"><span class="blind">검색창 띄우기</span></button>
+            </div>
+            <div class="search_part">
+              <form action="" method="get">
+                <fieldset>
+                  <legend>검색</legend>
+                  <label for="search"><span class="blind">검색하세요</span></label>
+                  <input type="search" id="search" name="search" value="" placeholder="" />
+                  <button type="button">
+                    <span class="blind">검색</span>
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="gnb_area">
+            <div class="gnb_btn">
+              <i class="far fa-minus-square"></i>
+              <button type="button"><span class="blind">메뉴</span></button>
+            </div>
+            <div class="gnb_nav act">
+              <div class="gnb_close_btn">
+                <button type="button"><span>닫기</span></button>
+              </div>
+              <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">product</a></li>
+                <li><a href="#">notice</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
       <section id="viewBox">
         <h2 class="blind">광고영역</h2>
         <div class="viewBox_innerwrap container">
-          <div class="indicator"></div>
+          <div class="indicator blind_wrap">
+            <ul class="clearfix">
+              <li class="act"><a href="#"><span>광고1에 대한 요약설명</span></a></li>
+              <li><a href="#"><span>광고2에 대한 요약설명</span></a></li>
+              <li><a href="#"><span>광고3에 대한 요약설명</span></a></li>
+              <li><a href="#"><span>광고4에 대한 요약설명</span></a></li>
+              <li><a href="#"><span>광고5에 대한 요약설명</span></a></li>
+              <li><a href="#"><span>광고6에 대한 요약설명</span></a></li>
+              <li><a href="#"><span>광고7에 대한 요약설명</span></a></li>
+            </ul>
+          </div>
 
           <div class="view_area">
             <div class="view_guide">
@@ -61,6 +106,7 @@
 
       <article id="contentBox">
         <div class="title_shape"></div>
+        <div class="content_area"></div>
       </article>
       <article id="infoBox" class="clearfix">
         <div class="new_area info_tablet_area info_pc_area"></div>

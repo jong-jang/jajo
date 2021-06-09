@@ -9,3 +9,6 @@
 @import url("../pwd_02/d_tablet.css");
 /* pc : 960px ~ */
 @import url("../pwd_02/e_pc.css");
+
+/* tablet,pc 통합영역 : 768~ */
+@import url("../pwd_02/table_pc.css");

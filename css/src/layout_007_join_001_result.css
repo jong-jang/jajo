@@ -128,8 +128,7 @@ button[data-value="France"] {background-position: -141px -23px;}
   overflow-y:visible;
 }
 
-
-/*  */
+/* -------------------------------- */
 fieldset:last-of-type > p {
   width: 100%; height: auto;
   margin-bottom:35px;
