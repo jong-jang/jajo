@@ -106,7 +106,8 @@ var product = document.getElementsByClassName('product')[0];
 // product.appendChild(makeLi5);
 // 6
 var makeLiFn = function(data){
-  var makeLi = document.createElement('li')
+  var makeLi = document.createElement('li');
+  makeLi.setAttribute('tabIndex', '0');
   product.appendChild(makeLi);
 // 6-1
   var liContent = '<div class="base"><span></span></div><div class="other none"><dl><dt></dt><dd></dd><dd><button type="button"><span></span></button></dd><dd><a href="#"><span></span></a></dd></dl></div><div class="line_focus"></div>';
@@ -202,12 +203,40 @@ for(; i<cardLen; i++){
 // 
 
 var productLi = product.getElementsByTagName('li');
+// console.log(productLi);
+// var productLiOther = productLi[0].getElementsByClassName('other')[0];
 
-var addAct = function(){
-  productLi[0].classList.add('act');
+var addAct = function(n){
+  return function(){
+    var productLiOther = productLi[n].getElementsByClassName('other')[0];
+    productLiOther.style.display = 'block';
+    setTimeout(function(){
+      productLi[n].classList.add('act');
+    }, 100);
+  }
+}
+var removeAct = function(n){
+  return function(){
+    var productLiOther = productLi[n].getElementsByClassName('other')[0];
+    productLi[n].classList.remove('act');
+    setTimeout(function(){
+      productLiOther.style.display = 'none';
+    }, 300);
+  };
 };
-var removeAct = function(){
-  productLi[0].classList.remove('act');
-};
-productLi[0].addEventListener('mouseenter', addAct);
-productLi[0].addEventListener('mouseleave', removeAct);
+
+var liEventAd = function(n){
+  productLi[n].addEventListener('focus', addAct(n));
+  productLi[n].addEventListener('mouseenter', addAct(n));
+  
+  var liLink = productLi[n].getElementsByTagName('a')[0];
+  
+  liLink.addEventListener('blur', removeAct(n));
+  productLi[n].addEventListener('mouseleave', removeAct(n));
+}
+
+var liLen = productLi.length;
+var i = 0;
+for(;i<liLen;i++){
+  liEventAd(i);
+}
