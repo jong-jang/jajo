@@ -59,6 +59,7 @@ gal_02_list.children('a').on('click', gal2ImgFn());
 // 4. 나머지 기능은 위와 동일
 
 var gallery_03 = $('.gallery_03');
+console.log(gallery_03);
 var gallery_03_Ul = gallery_03.find('ul');
 
 

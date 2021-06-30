@@ -1,0 +1,151 @@
+/*  js_013_gallery_02.css */
+
+.part {
+  position: relative;
+  width:400px; height:auto;
+  margin:auto; margin-top:30px;
+  padding:10px; padding-bottom:100px;
+  margin-bottom:1000px;
+  background-color:#efefef;
+}
+
+.big_image {
+  position:relative;
+  width: 100%; height:400px;
+  margin-top:10px auto;
+
+}
+
+.big_content {
+  position: absolute; top:0; left:0;
+  z-index:0;
+  width:100%; height:100%;
+  border-radius: 5px;
+  border:1px solid #777;
+  box-sizing: border-box;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big_content.act{z-index:100;}
+.big_narr_01 {background-color:#fa0a;}
+.big_narr_02 {display:none; background-color:#0afa;}
+
+.thumnail {
+  position: absolute;
+  bottom:10px; left:0; right:0;
+  margin:auto;
+  width:100%; height:80px;
+  padding:10px 20px;
+  box-sizing: border-box;
+  /* background-color: #dfdfdf; */
+}
+
+.thumnail li {
+  float:left;
+  width:60px; height:60px;
+  margin-left:15px;
+  /* background-color:#fafafa; */
+}
+.thumnail li:first-child {
+  margin-left:0;
+}
+.thumnail li a {
+  position:relative;
+  background-image: url("../../img/gallery/u_thumnail/gal_01.jpg");
+  background-size: 100%;
+  transition: all 100ms linear;
+}
+
+.thumnail li a:before,
+.thumnail li a::before {
+  content:" "; display:block;
+  position:absolute; top:0; left:0;
+  width:100%; height:100%;
+  background-color: rgba(0,0,0,0.5);
+  transition:all 50ms ease;
+}
+
+.thumnail li a:focus {
+  background-size: 120%;
+  border:2px solid #0a0;
+}
+.thumnail li a:hover {
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.thumnail li.act a {
+  border:2px solid #0a0;
+}
+.thumnail li a:hover:before,
+.thumnail li a:hover::before {
+  background-color: rgba(255,255,255,0);
+}
+.thumnail li a:focus:before,
+.thumnail li a:focus::before {
+  background-color: rgba(255,255,255,0);
+}
+/* -----------------------------------------------------test */
+.thumnail2 {
+  width:100%; height:30px;
+  padding:10px 20px;
+  box-sizing: border-box;
+}
+
+.thumnail2 li {
+  float:left;
+  width:60px; height:60px;
+  margin-left:15px;
+
+}
+.thumnail2 li > a:focus,
+.thumnail2 li > a:hover {
+  outline: 5px solid #17f;
+  background-size: 120%;
+  transition: all 1000ms ease;
+}
+.thumnail2 li > a{
+  display: block;
+  width:100%; height:inherit;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.big2 {
+  position: fixed;
+  top:10%; left:0; right:0; z-index: 1500;
+  margin:auto;
+  width:600px; height:600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+
+}
+
+.back{
+  position: relative;
+  top:10%; left:0; right:0;
+  margin:auto;
+  width:600px; height:600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.front{
+  position: fixed;
+  top:0; right:0; z-index:9;
+  width:100%; height:100%;
+  opacity: 0.5;
+}
+
+.xbtn {
+  position: absolute;
+  top:0; right:0; z-index:10;
+  width:20px; height:20px;
+}
+.xbtn:focus, 
+.xbtn:hover {
+  outline: 1px solid #17f;
+}
