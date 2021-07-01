@@ -117,71 +117,72 @@ thumnailLi.find('a').on('focus click', function(e){
 });
 // modal test--------------------------------------------------------
 
-var modal = $('.modal');
-var mothUl = $('.thumnail2');
-var big2 = $('.big2');
-var liText = '<li><a href="#"><span>이미지_01</span></a></li>';
-var thumUrl = '../img/gallery/u_thumnail/'
-var bigUrl = '../img/gallery/u_big/'
-var moLi = mothUl.find('li');
-var mosp = mothUl.find('span');
-var xbtn = $('.xbtn');
-var wrap = $('#wrap');
-var modalList = [
-  {
-    thumI:'gal_01.jpg',
-    thumT:'설명 01',
-    bigI:'gal_01.jpg',
-    bigT:'빅설명 01'
-  },
-  {
-    thumI:'gal_02.jpg',
-    thumT:'설명 02',
-    bigI:'gal_02.jpg',
-    bigT:'빅설명 02'
-  },
-  {
-    thumI:'gal_03.jpg',
-    thumT:'설명 03',
-    bigI:'gal_03.jpg',
-    bigT:'빅설명 03'
-  },
-  {
-    thumI:'gal_04.jpg',
-    thumT:'설명 04',
-    bigI:'gal_04.jpg',
-    bigT:'빅설명 04'
-  }
-];
+// var modal = $('.modal');
+// var mothUl = $('.thumnail2');
+// var big2 = $('.big2');
+// var liText = '<li><a href="#"><span>이미지_01</span></a></li>';
+// var thumUrl = '../img/gallery/u_thumnail/'
+// var bigUrl = '../img/gallery/u_big/'
+// var moLi = mothUl.find('li');
+// var mosp = mothUl.find('span');
+// var xbtn = $('.xbtn');
+// var wrap = $('#wrap');
+// var modalList = [
+//   {
+//     thumI:'gal_01.jpg',
+//     thumT:'설명 01',
+//     bigI:'gal_01.jpg',
+//     bigT:'빅설명 01'
+//   },
+//   {
+//     thumI:'gal_02.jpg',
+//     thumT:'설명 02',
+//     bigI:'gal_02.jpg',
+//     bigT:'빅설명 02'
+//   },
+//   {
+//     thumI:'gal_03.jpg',
+//     thumT:'설명 03',
+//     bigI:'gal_03.jpg',
+//     bigT:'빅설명 03'
+//   },
+//   {
+//     thumI:'gal_04.jpg',
+//     thumT:'설명 04',
+//     bigI:'gal_04.jpg',
+//     bigT:'빅설명 04'
+//   }
+// ];
 
-var modalLiFn = function(i){
-  mothUl.append(liText);
-  var moLi = mothUl.find('li');
-  var mosp = mothUl.find('span');
-  var thLink = thumUrl + modalList[i].thumI;
-  var thT = modalList[i].thumT;
-  moLi.eq(i).children('a').css({backgroundImage:'url('+ thLink + ')'});
-  mosp.text(thT);
-};
+// var modalLiFn = function(i){
+//   mothUl.append(liText);
+//   var moLi = mothUl.find('li');
+//   var mosp = mothUl.find('span');
+//   var thLink = thumUrl + modalList[i].thumI;
+//   var thT = modalList[i].thumT;
+//   moLi.eq(i).children('a').css({backgroundImage:'url('+ thLink + ')'});
+//   mosp.text(thT);
+// };
 
-var i=0;
-var modalLen = modalList.length;
-for(; i<modalLen; i++){
-  modalLiFn(i);
-}
-big2.hide();
-var moLi = mothUl.find('li');
-moLi.children('a').on('click', function(e){
+// var i=0;
+// var modalLen = modalList.length;
+// for(; i<modalLen; i++){
+//   modalLiFn(i);
+// }
+// big2.hide();
+// var moLi = mothUl.find('li');
+// moLi.children('a').on('click', function(e){
 
-  e.preventDefault();
-  var thispI = $(this).parent().index();
-  big2.css({backgroundImage:'url('+ bigUrl + modalList[thispI].bigI +')'});
-  big2.show();
-});
-xbtn.on('click', function(e){
-  e.preventDefault();
+//   e.preventDefault();
+//   var thispI = $(this).parent().index();
+//   big2.css({backgroundImage:'url('+ bigUrl + modalList[thispI].bigI +')'});
+//   big2.show();
+// });
+// xbtn.on('click', function(e){
+//   e.preventDefault();
 
-  big2.hide();
-});
+//   big2.hide();
+// });
+
 
 })(jQuery);
