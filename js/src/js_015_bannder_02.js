@@ -8,7 +8,7 @@ $.ajax({
   url:"../data/banner_02.json",
   context: document.body
 }).done(function(data){
-  var baseUrl = "../img/gallery/";
+  var baseUrl = "../img/gallery/u_big/";
   var viewdata = data;
   
 
@@ -25,6 +25,11 @@ $.ajax({
   var viewUl = viewArea.children('ul');
   var viewLi = viewUl.children('li');
   var viewLiLen = viewLi.length;
+
+  var indi = $('.indi');
+  var indiUl = indi.children('ul');
+  var indiLi = indiUl.children('li');
+  var indiBtn = indiLi.children('button');
 
   var n = 0;
   var permisstion = true;
@@ -45,11 +50,20 @@ $.ajax({
     viewLink.attr('href', viewdata[i].link);
   };
 
+  
+  var indiFn = function(n){
+    var indiN = '<li><button type="button"><span class="blind">'+ n +'</span></button></li>';
+    indiUl.append(indiN);
+  }
+  // indicator 생성
+
   var i = 0;
   for(; i< viewLiLen; i++){
     viewInnerTextFn(i);
+    indiFn(i);
   }
-
+  var indiLi = indiUl.children('li');
+  var indiBtn = indiLi.children('button');
   // -----------------------------------------------
   
   // 100. 1칸씩 이동
@@ -63,7 +77,8 @@ $.ajax({
   // ul의 길이를 변경
   viewUl.css({width:newLiLen*100 + '%', position:'relative', left:-100+'%'});
   newViewLi.css({width:100/newLiLen+'%'})
-  
+  // ----------------------------------------------------------------
+
   var n = 0;
   var perminssion = true;
 
@@ -73,15 +88,17 @@ $.ajax({
     if(perminssion){
       perminssion=false;
       n++;
-      
+
       if(n > viewLiLen-1){
         n = 0;
         viewUl.css({marginLeft:100 + '%'});
+
       }
       viewUl.animate({marginLeft:(-100*n) + '%'}, function(){
+        var indiI= indiLi.eq(n);
+        indiI.css({width:90 + 'px', backgroundColor: '#ac0' , borderRadius:20+'px'})
+        indiI.siblings().css({width:30 + 'px' ,backgroundColor: '#fff', borderRadius:100 + '%'});
         perminssion=true;
-        
-       
       });
 
     }
@@ -95,7 +112,11 @@ $.ajax({
       perminssion=false;
       n--;
       viewUl.animate({marginLeft:(-100*n) + '%'}, function(){
-        
+
+        var indiI= indiLi.eq(n);
+        indiI.css({width:90 + 'px', backgroundColor: '#ac0' , borderRadius:20+'px'})
+        indiI.siblings().css({width:30 + 'px' ,backgroundColor: '#fff', borderRadius:100 + '%'});
+
         if(n < 0){
           n = viewLiLen-1;
           var lastMv = -100 * n + '%';
@@ -103,11 +124,28 @@ $.ajax({
         }
         perminssion=true;
 
+
       });
 
     }
     
   });
 
+  indiBtn.on('mouseenter focus' , function(e){
+    e.preventDefault();
+    var thisI = $(this).parent().index();
+    var indiI = indiLi.eq(thisI);
+
+    indiI.css({width:90 + 'px', backgroundColor: '#ac0' , borderRadius:20+'px'})
+    indiI.siblings().css({width:30 + 'px' ,backgroundColor: '#fff', borderRadius:100 + '%'});
+
+    viewUl.stop().animate({marginLeft:-100 * thisI + '%'});
+    
+  });
+
+
+
+
   }); // $.ajax().done()
+
 })(jQuery);

@@ -1,0 +1,90 @@
+/*  js_017_banner_03_indicator.css */
+
+#wrap {
+  width:100%; min-width:1280px; max-width:1920px; height:auto;
+  margin:auto;
+  background-color: #eee;
+
+}
+
+.part {
+  position: relative;
+  width:100%; max-width:1600px; height:auto;
+  margin:auto; margin-top:1rem; padding-bottom: 4rem;
+  background-color: #ccc;
+}
+
+h2 {
+  width:100%; height:auto;
+  padding:1rem; box-sizing:border-box;
+  font-size: 1.5rem; margin-bottom:1rem;
+  text-align: center;
+}
+
+/* .indicator */
+.indicator {
+  position:absolute;
+  left:0; right:0; bottom:1rem;
+  text-align: center;
+  width:100%; height:auto;
+  background-color: #daa;
+  margin:auto;
+}
+
+.indicator ul {
+  display:inline-block;
+  text-align: center;
+  padding:0.3rem;
+  border-radius: 3rem;
+  width:auto; height:100%;
+  background-color: #557;
+}
+.indicator li {
+  /* float:left; */
+  display:inline-block;
+  width:2rem; height:2rem;
+  margin-right: 1rem;
+}
+.indicator li:last-child {
+  margin-right: 0;
+}
+.indicator li a {
+  display: block;
+  width: 100%; height: 100%;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.indicator li.act {
+  width:5rem;
+}
+.indicator li.act a {
+  background-color: #f06;
+}
+.indicator a:hover {box-shadow:0.2rem 0.2rem 0.2rem #171717;}
+.indicator a:focus {border:2px solid #171717;}
+
+/* .view_area */
+.view_area {
+  width:80%; height:500px;
+  margin:auto; border:0.0625rem solid #555;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.view_area ul {
+  width:500%; height:100%;
+  background-color: #aaa;
+}
+.view_area li {
+  float:left;
+  width:calc(100% / 5); height:100%;
+  padding:2rem; box-sizing: border-box;
+  font-size: 3rem; font-weight: 700;
+  color:#fff;
+}
+
+#viewSelect_01 { background-color: #C180BFaa;}
+#viewSelect_02 { background-color: #F217B4aa;}
+#viewSelect_03 { background-color: #38BAFAaa;}
+#viewSelect_04 { background-color: #4DDC29aa;}
+#viewSelect_05 { background-color: #7E660Eaa;}

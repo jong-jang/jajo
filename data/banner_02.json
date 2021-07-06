@@ -2,31 +2,31 @@
   {
     "tilte" : "1.제목",
     "content" : "lorem10",
-    "link" : "http://주소",
-    "bgImg" : "배경이미지"
+    "link" : "http://naver.com",
+    "bgImg" : "gal_01.jpg"
   },
   {
     "tilte" : "2.제목",
     "content" : "lorem10",
-    "link" : "http://주소",
-    "bgImg" : "배경이미지"
+    "link" : "http://naver.com",
+    "bgImg" : "gal_02.jpg"
   },
   {
     "tilte" : "3.제목",
     "content" : "lorem10",
-    "link" : "http://주소",
-    "bgImg" : "배경이미지"
+    "link" : "http://naver.com",
+    "bgImg" : "gal_03.jpg"
   },
   {
     "tilte" : "4.제목",
     "content" : "lorem10",
-    "link" : "http://주소",
-    "bgImg" : "배경이미지"
+    "link" : "http://naver.com",
+    "bgImg" : "gal_04.jpg"
   },
   {
     "tilte" : "5.제목",
     "content" : "lorem10",
-    "link" : "http://주소",
-    "bgImg" : "배경이미지"
+    "link" : "http://naver.com",
+    "bgImg" : "gal_05.jpg"
   }
 ]
