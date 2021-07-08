@@ -36,14 +36,13 @@ var indiLiClassSetFn = function(n){
     indiLi.eq(n).siblings().removeClass('act');
     numberCheckFn(n);
 };
-
+var clickFn = function(n){
+  viewLi.eq(n).fadeIn(function(){
+    permission=true;
+  });
+  viewLi.eq(n).siblings().hide();
+}
 // 동작전 형태변경
-var cloneLi = viewLi.eq(-1).clone();
-viewUl.prepend(cloneLi);
-var newViewLi = viewUl.find('li');
-var newViewLiLen = newViewLi.length;
-viewUl.css({'position':'relative', 'left':-100+'%', 'width': 100*newViewLiLen+'%'});
-newViewLi.css({'width': 100/newViewLiLen + '%'});
 
 // 함수 우선 수행
 
@@ -58,7 +57,7 @@ indiLiLink.on('click', function(e){
   // 순서파악
   n = $(this).parent().index();
   // 배너이동
-  viewUl.animate({marginLeft:-100 * n + '%'});
+  clickFn(n);
   indiLiClassSetFn(n);
 });
 
@@ -70,12 +69,9 @@ nextBtn.on('click', function(e){
     n+=1;
     if(n >= viewLiLen){
       n=0;
-      viewUl.stop().css({marginLeft:100 + '%'});
     }
-    viewUl.stop().animate({marginLeft:-100 * n + '%'}, function(){
-      indiLiClassSetFn(n);
-      permission=true;
-    });
+    clickFn(n);
+    indiLiClassSetFn(n);
   }
 });
 
@@ -84,26 +80,41 @@ prevBtn.on('click', function(e){
   if(permission){
     permission=false;
     n -= 1;
-    viewUl.stop().animate({marginLeft:-100 * n + '%'}, function(){
     if(n<0){
       n = viewLiLen -1;
-      viewUl.stop().css({marginLeft:-100 * n + '%'});
     }
+    clickFn(n);
     indiLiClassSetFn(n);
-    permission=true;
-    });
   }
 });
 
 // 일정 타임 이동처리
 var timed = 1000;
-
 var moveSlide;
+
 var slideGoFn = function(){
   moveSlide = setInterval (function(){
     nextBtn.trigger('click');
   }, timed*2);
 }
+slideGoFn();
+// gostop_btn
+var pauseBtn = $('.pause');
+var playBtn = $('.play');
+
+pauseBtn.on('click', function(e){
+  e.preventDefault();
+  clearInterval(moveSlide);
+  $(this).addClass('act');
+  $(this).siblings().removeClass('act');
+});
+
+playBtn.on('click', function(e){
+  e.preventDefault();
+  slideGoFn();
+  $(this).addClass('act');
+  $(this).siblings().removeClass('act');
+});
 
 banner.on('mouseenter', function(){
   clearInterval(moveSlide);
