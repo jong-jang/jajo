@@ -1,0 +1,65 @@
+/*  jq_test1.css */
+
+#wrap {
+  width:100%; height:auto;
+  background-color: #fff;
+}
+#headBox {
+  position:fixed;
+  top:0; left:0;
+  margin:auto;
+  width:100%; height:100px;
+  padding:10px; box-sizing: border-box;
+  background-color: #f83;
+}
+h1 {
+  float:left;
+  width:70px; height:70px;
+  color:#fff;
+  background-color: #77c;
+}
+h1 a {
+  display: block;
+  width:100%; height:100%;
+}
+#navi {
+  float:right;
+  width:auto; height:auto;
+}
+#navi ul {
+  width:auto; height:auto;
+}
+#navi ul li{
+  float:left;
+  width:auto; height:auto;
+  transform: translateY(50%);
+  margin-right: 20px;
+  padding: 10px; box-sizing: border-box;
+  background-color: #fff;
+}
+#navi ul li a {
+  display: block;
+  width:100%; height:100%;
+}
+#viewBox {
+  width:90%; height:1200px;
+  margin:auto;
+  padding: 150px 0; box-sizing: border-box;
+  background-color: #77c;
+}
+h2 {
+  font-size: 5rem;
+  color: #fff;
+}
+#contentBox {
+  width:100%; height:800px;
+  background-color: #f83;
+}
+#contentBox2 {
+  width:100%; height:800px;
+  background-color: #ae7;
+}
+#footBox {
+  width:100%; height:300px;
+  background-color: #777;
+}
