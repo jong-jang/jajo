@@ -1,0 +1,17 @@
+/*  js_022_rwd.css */
+
+#wrap {
+  width:100%; height:auto; min-height:500px;
+  margin:auto;
+  background-color:#ddd;
+}
+
+p {
+  width: 90%; 
+  margin-left: 5%; margin-top: 1rem; 
+  line-height: 2;
+  background-color: #add; 
+  border-bottom: 1px solid #333;
+}
+
+.device {display: none;}
