@@ -1,0 +1,7 @@
+/*  a_basic_content.css */
+
+  /* 기본형틀 */
+#wrap {
+  width:100%; min-width:1280px; height:auto; min-height:500px;
+  margin:auto; background-color: #ddd;
+}

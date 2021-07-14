@@ -1,0 +1,61 @@
+/*  js_rwdtest.css */
+
+#wrap {
+  width:100%; height:auto;
+}
+
+#headBox {
+  width:100%; height:150px;
+  padding:40px; box-sizing: border-box;
+  background-color: #fff;
+}
+h1 {
+  float:left;
+  width:200px; height:50px;
+}
+#naviBox {
+  float:right;
+  width:1500px; height:50px;
+}
+.gnb {
+  float:left;
+  width:1000px; height:50px;
+}
+.gnb li{
+  float:left;
+  width:auto; height:50px;
+  margin-right: 50px;
+}
+.unb {
+  float:right;
+  width:500px; height:50px;
+}
+.unb li{
+  float:left;
+  width:100px; height:50px;
+}
+#viewBox {
+  width:100%; height:800px;
+}
+#viewBox ul {
+  position:relative;
+  width:100%; height:100%;
+}
+#viewBox ul li{
+  float:left;
+  width:calc(100% / 6); height:240px;
+}
+#viewBox ul li:first-of-type,
+#viewBox ul li:nth-of-type(6) {
+  height:100%;
+}
+#viewBox div {
+  float:left;
+  position:absolute;
+  bottom:0; left:50%; transform: translateX(-50%);
+  width:calc(100% / 6 * 4); height:560px;
+  background-color: #ac0;
+}
+@media screen {
+  
+}
