@@ -28,78 +28,90 @@
 </head>
 <body>
   <!-- layout -->
-    <div id="wrap">
-      <header id="headBox">
-        <div class="container">
-          <h1><a href="./all_contents.html">웹표준</a></h1>
-          <nav id="unb">
-            <h2 class="blind">유틸리티 네비게이션</h2>
-            <ul class="unb_list blind_wrap">
-              <li><a href="#"><i class="fas fa-globe"></i><span>한국어</span></a></li>
-              <li><a href="#"><i class="fas fa-map-marker-alt"></i><span>위치안내</span></a></li>
-              <li><a href="#"><i class="fas fa-user-circle"></i><span>회원로그인</span></a></li>
-            </ul>
-          </nav>
-          <nav id="gnb">
-            <h2 class="blind">전체 네비게이션</h2>
-            <div class="gnb_btn">
-              <button type="button">
-                <span class="blind">전체 메뉴</span>
-                <i class="line line1"></i>
-                <i class="line line2"></i>
-                <i class="line line3"></i>
-              </button>
-            </div>
-            <ul class="gnb_list">
-              <li>
-                <div class="nav_title"><a href="#">about us</a></div>
-                <ul class="nav_content">
-                  <li><a href="#">연혁</a></li>
-                  <li><a href="#">인사말</a></li>
-                  <li><a href="#">위치안내</a></li>
-                  <li><a href="#">브랜드가이드</a></li>
-                </ul>
-              </li>
-              <li>
-                <div class="nav_title"><a href="#">메뉴보기</a></div>
-                <ul class="nav_content">
-                  <li><a href="#">커피류</a></li>
-                  <li><a href="#">쥬스</a></li>
-                  <li><a href="#">쿠키</a></li>
-                  <li><a href="#">기타</a></li>
-                </ul>
-              </li>
-              <li>
-                <div class="nav_title"><a href="#">선물하기</a></div>
-                <ul class="nav_content">
-                  <li><a href="#">커피</a></li>
-                  <li><a href="#">텈블러</a></li>
-                  <li><a href="#">시즌상품</a></li>
-                </ul>
-              </li>
-              <li>
-                <div class="nav_title"><a href="#">게시판</a></div>
-                <ul class="nav_content">
-                  <li><a href="#">frequent and answer</a></li>
-                  <li><a href="#">notice</a></li>
-                  <li><a href="#">gallery</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <section id="viewBox">
-        <h2>광고영역</h2>
-      </section>
-      <article id="contentBox">
-        <h2>본문영역</h2>
-      </article>
-    </div>
+  <div id="wrap">
+    <header id="headBox">
+      <div class="container">
+        <h1><a href="./all_contents.html">웹표준</a></h1>
+        <nav id="unb">
+          <h2 class="blind">유틸리티 네비게이션</h2>
+          <ul class="unb_list blind_wrap">
+            <li><a href="#"><i class="fas fa-globe"></i><span>한국어</span></a></li>
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i><span>위치안내</span></a></li>
+            <li><a href="#"><i class="fas fa-user-circle"></i><span>회원로그인</span></a></li>
+          </ul>
+        </nav>
+        <nav id="gnb">
+          <h2 class="blind">전체 메뉴 영역</h2>
+
+          <div class="gnb_btn">
+            <button type="button">
+              <span class="blind">전체 메뉴</span>
+              <i class="line line1"></i>
+              <i class="line line2"></i>
+              <i class="line line3"></i>
+            </button>
+          </div>
+          
+          <ul class="gnb_list">
+            <li>
+              <div class="nav_title"><a href="#">about us</a></div>
+              <ul class="nav_content">
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">위치안내</a></li>
+                <li><a href="#">브랜드 가이드</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">메뉴보기</a></div>
+              <ul class="nav_content">
+                <li><a href="#">커피류</a></li>
+                <li><a href="#">쥬스</a></li>
+                <li><a href="#">쿠키</a></li>
+                <li><a href="#">기타</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">선물하기</a></div>
+              <ul class="nav_content">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">텀블러</a></li>
+                <li><a href="#">시즌상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="nav_title"><a href="#">게시판</a></div>
+              <ul class="nav_content">
+                <li><a href="#">frequent and answer</a></li>
+                <li><a href="#">notice</a></li>
+                <li><a href="#">gallery</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="viewBox">
+      <h2>광고영역</h2>
+    </section>
+    <article id="contentBox">
+      <h2>본문영역</h2>
+    </article>
+
+    
+  </div>
   <!-- script -->
   <script src="../js/jquery/jquery-3.6.0.min.js"></script>
   <script src="../js/jquery/jquery-ui.min.js"></script>
-  <!-- <script src="../js/src/js_023_rwd_header.js"></script> -->
+  <script src="../js/jquery/device_temp.js"></script>
+
+  <!-- $.ajax() , 선택자.load() -->
+  <script src="../js/src/js_023_rwd_header.js"></script>
+
+  <script src="../js/rwd_header/header_smartphone.js"></script>
+  <!-- <script src="../js/rwd_header/header_tablet.js"></script> -->
+  <!-- <script src="../js/rwd_header/header_labtop.js"></script> -->
+  <!-- <script src="../js/rwd_header/header_pc.js"></script> -->
   
 </body>
 </html>
