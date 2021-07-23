@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- html/js_024_parallax_01.html -->
+<!-- html/js_025_landing_01.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8">
@@ -24,7 +24,7 @@
   <!-- css design -->
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
-  <link rel="stylesheet" href="../css/src/js_024_parallax_01.css">
+  <link rel="stylesheet" href="../css/src/js_025_landing_01.css">
 
   <title>웹 기초</title>
   
@@ -33,16 +33,27 @@
   <!-- layout -->
   <div id="wrap">
     <div class="info">
-      <h1><a href="./all_contents.html">웹표준</a></h1><hr />
-      <h2>parallax웹 구현</h2>
-      <p>스크롤이나, 마우스의 움직임에의해 시차를 느끼게 만드는 효과</p>
+      <h1><a href="./all_contents.html">웹표준</a></h1>
 
-      <ul>
-        <li>1. event - scroll</li>
-        <li>2. background-position: 0~100%</li>
-        <li>3. 화면의 하단(시작부분) 상단에있는 영역(끝부분)</li>
-        <li>4. 화면의 영역을 0~100%로 구분하는 방법</li>
-      </ul>
+      <div class="narr">
+        <h2>landing 구현</h2>
+        <p>스크롤이나, 마우스의 움직임에의해 일정위치에서 기능이 구현되는 효과</p>
+        <ul>
+          <li>scroll 이벤트</li>
+          <li>이미지가 나타나는 방법 opacity 0~1</li>
+          <li>나타나는 것을 효과를 좀더 풍부하기위해서는 transform:translate()   ||  margin-top  ||  top</li>
+          <li>나타나는 시점은 화면상의 하단에서부터 약 1/3 ~ 1/4 에서 나타나야 자연스럽다.</li>
+        </ul>
+      </div>
+
+      <hr />
+      
+      <div class="narr">
+        <h2>mousewheel 처리</h2>
+        <p>firefox에서는 DOMMouseScroll 이벤트를 가지고, 이외는 mousewheel 이벤트를 가진다.</p>
+        <p>이때, 수치는 DOMMouseScroll에서는 -3/3의 수치를 가지고, mousewheel에서는 120/-120의 값을 가지고 있다.</p>
+        <p>그렇기에 둘의 동일한 수치를 만들고 이를 수행할 수 있도록 처리</p>
+      </div>
     </div>
 
     <div class="part">
@@ -83,50 +94,12 @@
         </li>
       </ul>
     </div>
-    
-    <div class="part2">
-      <h3>외부 파일기능과 유사하게 따라만들기</h3>
-      <p>참조주소 : https://delassus.com/en/about</p>
-
-      <ul>
-        <li>
-          <div class="img_box">
-            <div class="position_img"></div>
-            <span class="blind">사이트에서 사용한 이미지</span></div>
-          <dl>
-            <dt>제목</dt>
-            <dd>내용</dd>
-          </dl>
-        </li>
-        <li>
-          <div class="img_box">
-            <div class="position_img"></div>
-            <span class="blind">사이트에서 사용한 이미지</span></div>
-          <dl>
-            <dt>제목</dt>
-            <dd>내용</dd>
-          </dl>
-        </li>
-        <li>
-          <div class="img_box">
-            <div class="position_img"></div>
-            <span class="blind">사이트에서 사용한 이미지</span></div>
-          <dl>
-            <dt>제목</dt>
-            <dd>내용</dd>
-          </dl>
-        </li>
-      </ul>
-    </div>
-
-
   </div>
   <!-- script -->
   <script src="../js/jquery/jquery-3.6.0.min.js"></script>
   <script src="../js/jquery/jquery-ui.min.js"></script>
-  <!-- <script src="../js/src/js_024_parallax_01.js"></script> -->
-  <!-- <script src="../js/src/js_024-1_why.js"></script> -->
-  <!-- <script src="../js/src/js_024_parallax_02.js"></script> -->
-  <script src="../js/src/js_024-2.js"></script>
+  <!-- <script src="../js/src/js_025_landing_01.js"></script> -->
+  <!-- <script src="../js/src/js_025_landing_02.js"></script> -->
+  <script src="../js/src/js_025_landing_03.js"></script>
 </body>
 </html>

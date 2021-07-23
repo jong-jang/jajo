@@ -40,17 +40,17 @@ p { padding: 1rem; background-color: #fdd; margin-bottom: 1rem;}
 .img_box { 
   float:left; width:400px; height:100%;
   margin-right: 100px;
-  background-color: #aaf;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size:130%;
+  background-size:100%;
+  opacity: 0;
 }
 
 .part li:nth-child(2n + 1) > .img_box { float:right; margin-right: 0; }
-.part li:nth-child(1) > .img_box { background-image: url("../../img/parallax/img_01.jpg");}
-.part li:nth-child(2) > .img_box { background-image: url("../../img/parallax/img_02.jpg");}
-.part li:nth-child(3) > .img_box { background-image: url("../../img/parallax/img_03.jpg");}
-.part li:nth-child(4) > .img_box { background-image: url("../../img/parallax/img_04.jpg");}
+.part li:nth-child(1) > .img_box { background-image: url("../../img/icon/im1.jpg");}
+.part li:nth-child(2) > .img_box { background-image: url("../../img/icon/im2.png");}
+.part li:nth-child(3) > .img_box { background-image: url("../../img/icon/im3.png");}
+.part li:nth-child(4) > .img_box { background-image: url("../../img/icon/im4.png"); background-size: 50% auto;}
 
 
 
